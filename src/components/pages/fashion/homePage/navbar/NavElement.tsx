@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Button from "../../../../reusable-ui/Button";
 
 export default function NavElement() {
   return (
@@ -7,7 +8,7 @@ export default function NavElement() {
       <li>FASHION</li>
       <li>FAVOURITE</li>
       <li>LIFESTYLE</li>
-      <button>SIGN UP</button>
+      <Button label="SIGN UP" />
     </NavElementStyled>
   );
 }
