@@ -2,6 +2,7 @@ import styled from "styled-components";
 import HomePage from "./homePage/HomePage";
 import BannerLogo from "./banner/BannerLogo";
 import NewArrivalsPage from "./newArrivals/NewArrivalsPage";
+import FooterPage from "./footer/FooterPage";
 
 export default function FashionPage() {
   return (
@@ -9,6 +10,7 @@ export default function FashionPage() {
       <HomePage />
       <BannerLogo />
       <NewArrivalsPage />
+      <FooterPage/>
     </FashionPageStyled>
   );
 }
