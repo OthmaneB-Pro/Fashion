@@ -5,7 +5,9 @@ export default function FashionPage() {
     <FashionPageStyled>
       <div className="container">
         <div className="navbar">
-          <h1> <img src="/img/logo_fashion.PNG" alt="logo"/> FASHION</h1>
+          <h1>
+            <img src="/img/logo_fashion.PNG" alt="logo" /> FASHION
+          </h1>
           <ul>
             <li>CATALOGUE</li>
             <li>FASHION</li>
@@ -15,13 +17,13 @@ export default function FashionPage() {
           </ul>
         </div>
         <div className="container-img">
-          <div>
+          <div className="text">
             <h1>LET'S EXPLORE UNIQUE CLOTHES.</h1>
-            <h3>Live for Influential and Innovative fashion!</h3>
+            <p>Live for Influential and Innovative fashion!</p>
             <button className="button-shop">Shop Now</button>
           </div>
-          <div>
-            <img src="/img/.png" alt="Woman_picture"></img>
+          <div className="image">
+            <img src="/img/shopping.png" alt="Woman_picture"></img>
           </div>
         </div>
       </div>
@@ -39,44 +41,67 @@ const FashionPageStyled = styled.div`
     width: 1380px;
     height: 680px;
   }
-  .navbar{
+  .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
     height: 40px;
+    h1 {
+      font-size: 28px;
+
+      img {
+        width: 31px;
+        height: 29px;
+      }
+    }
   }
-  ul{
+  ul {
     display: flex;
     align-items: center;
   }
-  li{
+  li {
     margin-right: 50px;
     list-style: none;
   }
   .container-img {
-    height: 532px;
-    background: gray;
+    height: 580px;
+    background: #f4f6f5;
     display: grid;
     grid-template-columns: 500px 1fr;
+    border-radius: 50px;
+    overflow: hidden;
   }
-  h1{
-    font-size: 28px;
 
-    img{
-        width: 31px;
-        height: 29px;
-    }
-  }
-  button{
+  button {
     background: black;
     color: white;
     border-radius: 7px;
-    padding: 12px;
-    border : none;
+    padding: 12px 20px 12px 20px;
+    border: none;
     cursor: pointer;
   }
-  .button-shop{
-        font-size: 22px;
+  .button-shop {
+    font-size: 22px;
+  }
+  .text {
+    margin-left: 80px;
+    h1 {
+      width: 400px;
+      font-size: 60px;
+      margin-bottom: 25px;
     }
+    p {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+  }
+  .image {
+    img {
+      position: relative;
+      top: 50px;
+      width: 800px;
+      height: auto;
+    }
+  }
 `;
