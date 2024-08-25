@@ -18,7 +18,10 @@ export default function FashionPage() {
         </div>
         <div className="container-img">
           <div className="text">
-            <h1>LET'S EXPLORE UNIQUE CLOTHES.</h1>
+            <h1>
+              <span className="back">LET'S</span> EXPLORE{" "}
+              <span className="back2">UNIQUE</span> CLOTHES.
+            </h1>
             <p>Live for Influential and Innovative fashion!</p>
             <button className="button-shop">Shop Now</button>
           </div>
@@ -32,6 +35,7 @@ export default function FashionPage() {
 }
 
 const FashionPageStyled = styled.div`
+  font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,9 +90,10 @@ const FashionPageStyled = styled.div`
   }
   .text {
     margin-left: 80px;
+    z-index: 10;
     h1 {
-      width: 400px;
-      font-size: 60px;
+      width: 500px;
+      font-size: 66px;
       margin-bottom: 25px;
     }
     p {
@@ -103,5 +108,39 @@ const FashionPageStyled = styled.div`
       width: 800px;
       height: auto;
     }
+  }
+  .back {
+    position: relative;
+    display: inline-block;
+  }
+
+  .back::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    width: 130%;
+    height: 85%;
+    background: white;
+    transform: translate(-50%, -50%) rotate(175deg);
+    z-index: -1;
+    padding: 10px;
+  }
+  .back2 {
+    position: relative;
+    display: inline-block;
+  }
+
+  .back2::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    width: 120%;
+    height: 85%;
+    background: #ebd96b;
+    transform: translate(-50%, -50%) rotate(175deg);
+    z-index: -1;
+    padding: 10px;
   }
 `;
