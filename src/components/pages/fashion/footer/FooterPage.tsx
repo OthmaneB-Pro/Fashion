@@ -4,8 +4,8 @@ import FooterTopPage from "./footerTop/FooterTopPage";
 export default function FooterPage() {
   return (
     <div>
-        <FooterTopPage/>
-        <FooterBottomPage/>
+      <FooterTopPage />
+      <FooterBottomPage />
     </div>
-  )
+  );
 }
